@@ -65,6 +65,12 @@ int main(void)
 	{
 		printf("선별진료소 목록을 찾으시겠습니까?(y 또는 n)");
 		scanf("%s", &ans1);
+		if(ans1=='n')
+		{
+			printf("이용해 주셔서 감사합니다");
+			return 0; 
+		}
+		
 		if (ans1 == 'y')
 		{
 			printf("보건소(1) 병원(2) 검색(3) (1 ,2 또는 3)");
